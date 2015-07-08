@@ -1,0 +1,16 @@
+colorscheme desert "color scheme using desert
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+"set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+
+" Highliget the current line
+set cursorline
+
+" Default size of vim
+set lines=40 columns=120
+
+highlight Pmenu guibg=black
+
+set guifont=Courier_New:h11
+set guifontwide=NSimsun:h12

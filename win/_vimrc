@@ -1,0 +1,78 @@
+" --- Vundle ---
+set nocompatible
+filetype off
+set rtp+=$VIM/vimfiles/bundle/Vundle.vim
+call vundle#begin('$VIM/vimfiles/bundle/')
+Plugin 'gmarik/Vundle.vim'
+ 
+" Plugins
+Plugin 'L9'
+Plugin 'AutoComplPop'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'mattn/vimtweak'
+Plugin 'mattn/transparency-windows-vim'
+Plugin 'taglist.vim'
+Plugin 'winmanager'
+Plugin 'a.vim'
+" Plugin 'majutsushi/tagbar'
+
+call vundle#end()
+filetype plugin indent on
+" --- Vundle Done ---
+
+syntax on
+colorscheme default
+
+set encoding=utf-8
+set fileencodings=utf-8
+
+"source $VIMRUNTIME/delmenu.vim
+"source $VIMRUNTIME/menu.vim
+"language messages zh_CN.utf-8
+"set termencoding=chinese
+
+" source $VIMRUNTIME/vimrc_example.vim
+" source $VIMRUNTIME/mswin.vim
+" behave mswin
+
+" Settings for Taglist
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+
+" Settings for winManage
+let g:winManagerWindowLayout='FileExplorer|TagList'
+nmap wm :WMToggle<cr> 
+
+" Minibuffer settings
+"let g:miniBufExplMapWindowNavVim=1
+"let g:miniBufExplMapWindowNavArrow=1
+
+" Highliget the current line
+set cursorline
+set hlsearch
+highlight CursorLine ctermbg=darkgrey
+
+" A
+nmap <silent><F12> :A<cr>
+
+"" Pydiction
+" filetype plugin on
+" let g:pydiction_location='C:/software/Vim/vimfiles/bundle/pydiction/complete-dict'
+
+let html_use_css=1
+
+" Indent
+set autoindent
+set tabstop=4 
+set shiftwidth=2 
+set expandtab 
+set softtabstop=2 
+" Lines 
+set number
+set ruler
+" Backspace
+set backspace=2
+
+" Markdown
+let g:vim_markdown_folding_disabled=1
