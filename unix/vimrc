@@ -10,3 +10,4 @@ set hlsearch
 syntax on
 colorscheme desert
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4
+autocmd FileType make setlocal tabstop=4 noexpandtab
